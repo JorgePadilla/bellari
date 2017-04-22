@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"timeout:ETI"V8::Context#timeout;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"@!attribute [r] timeout;To:RDoc::Markup::Verbatim;	[I"a@return [Number] maximum execution time in milliseconds for scripts executed in this context;T:@format0:
+@fileI"lib/v8/context.rb;T:0@omit_headings_from_table_of_contents_below0F@I"V8::Context;TcRDoc::NormalClass0

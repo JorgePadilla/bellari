@@ -1,0 +1,43 @@
+current directory: /home/ec2-user/.rvm/gems/ruby-2.2.2/gems/therubyracer-0.12.3/ext/v8
+/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin/ruby -r ./siteconf20170329-30041-1gwn8w5.rb extconf.rb
+checking for main() in -lpthread... yes
+creating Makefile
+
+current directory: /home/ec2-user/.rvm/gems/ruby-2.2.2/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" clean
+
+current directory: /home/ec2-user/.rvm/gems/ruby-2.2.2/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR="
+compiling handles.cc
+compiling exception.cc
+compiling backref.cc
+compiling constraints.cc
+compiling signature.cc
+compiling message.cc
+compiling context.cc
+compiling value.cc
+compiling accessor.cc
+compiling heap.cc
+compiling object.cc
+compiling template.cc
+compiling function.cc
+compiling external.cc
+compiling string.cc
+compiling gc.cc
+compiling locker.cc
+compiling v8.cc
+compiling primitive.cc
+compiling stack.cc
+compiling date.cc
+compiling constants.cc
+compiling invocation.cc
+compiling init.cc
+compiling trycatch.cc
+compiling array.cc
+compiling rr.cc
+compiling script.cc
+linking shared-object v8/init.so
+
+current directory: /home/ec2-user/.rvm/gems/ruby-2.2.2/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 init.so ./.gem.20170329-30041-1jqvfki/v8

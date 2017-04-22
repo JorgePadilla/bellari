@@ -1,0 +1,717 @@
+[2017-03-29 05:00:24] __rvm_with
+__rvm_with () 
+{ 
+    ( unset rvm_rvmrc_flag;
+    export rvm_create_flag=1;
+    export rvm_delete_flag=0;
+    export rvm_internal_use_flag=1;
+    export rvm_use_flag=0;
+    __rvm_use "$1" || return $?;
+    shift;
+    "$@" || return $? )
+}
+current path: /home/ec2-user/bellari/db/migrate
+GEM_HOME=/home/ec2-user/.rvm/gems/ruby-2.2.2
+PATH=/home/ec2-user/.rvm/gems/ruby-2.2.2/bin:/home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin:/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin:/home/ec2-user/.rvm/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+GEM_PATH=/home/ec2-user/.rvm/gems/ruby-2.2.2:/home/ec2-user/.rvm/gems/ruby-2.2.2@global
+command(3): __rvm_with ruby-2.2.2 gemset_pristine
+++ unset rvm_rvmrc_flag
+++ export rvm_create_flag=1
+++ rvm_create_flag=1
+++ export rvm_delete_flag=0
+++ rvm_delete_flag=0
+++ export rvm_internal_use_flag=1
+++ rvm_internal_use_flag=1
+++ export rvm_use_flag=0
+++ rvm_use_flag=0
+++ __rvm_use ruby-2.2.2
+++ typeset binary full_binary_path rvm_ruby_gem_home __path_prefix __path_suffix
+++ __rvm_select ruby-2.2.2
+++ true
+++ __rvm_select_set_variable_defaults
+++ export GEM_HOME GEM_PATH MY_RUBY_HOME RUBY_VERSION IRBRC
+++ export rvm_env_string rvm_action rvm_alias_expanded rvm_archive_extension rvm_bin_flag rvm_bin_path rvm_debug_flag rvm_default_flag rvm_delete_flag rvm_docs_type rvm_dump_environment_flag rvm_error_message rvm_expanding_aliases rvm_file_name rvm_gemdir_flag rvm_gemset_name rvm_gemstone_package_file rvm_gemstone_url rvm_head_flag rvm_hook rvm_install_on_use_flag rvm_llvm_flag rvm_loaded_flag rvm_niceness rvm_nightly_flag rvm_only_path_flag rvm_parse_break rvm_patch_original_pwd rvm_pretty_print_flag rvm_proxy rvm_quiet_flag rvm_reload_flag rvm_remove_flag rvm_ruby_alias rvm_ruby_args rvm_ruby_binary rvm_ruby_bits rvm_ruby_configure rvm_ruby_file rvm_ruby_gem_home rvm_ruby_gem_path rvm_ruby_global_gems_path rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_major_version rvm_ruby_make rvm_ruby_make_install rvm_ruby_minor_version rvm_ruby_mode rvm_ruby_name rvm_ruby_package_file rvm_ruby_package_name rvm_ruby_patch rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_revision rvm_ruby_selected_flag rvm_ruby_sha rvm_ruby_string rvm_ruby_strings rvm_ruby_tag rvm_ruby_url rvm_ruby_user_tag rvm_ruby_version rvm_script_name rvm_sdk rvm_silent_flag rvm_sticky_flag rvm_system_flag rvm_token rvm_trace_flag rvm_use_flag rvm_user_flag rvm_verbose_flag rvm_wrapper_name
+++ __rvm_select_detect_ruby_string ruby-2.2.2
+++ rvm_ruby_string=ruby-2.2.2
+++ [[ -z ruby-2.2.2 ]]
+++ __rvm_ruby_string
+++ true 0 0
+++ rvm_expanding_aliases=
+++ true 2.2.2 '' ruby 2.2.2 '' '' '' @ ruby-2.2.2 0 0
+++ [[ ruby-2.2.2 == *\@* ]]
+++ ((  rvm_expanding_aliases == 0  ))
+++ [[ -n ruby-2.2.2 ]]
+++ [[ ruby-2.2.2 != \s\y\s\t\e\m ]]
+++ [[ -f /home/ec2-user/.rvm/config/known_aliases ]]
+++ [[ -s /home/ec2-user/.rvm/config/known_aliases ]]
++++ __rvm_db_ /home/ec2-user/.rvm/config/known_aliases ruby-2.2.2
++++ typeset __db __key __value
++++ __db=/home/ec2-user/.rvm/config/known_aliases
++++ __key=ruby-2.2.2
++++ shift 2
++++ __value=
++++ case "${__value}" in
++++ __rvm_db_get /home/ec2-user/.rvm/config/known_aliases ruby-2.2.2
++++ [[ -f /home/ec2-user/.rvm/config/known_aliases ]]
++++ __rvm_sed -n -e '\#^ruby-2.2.2=# { s#^ruby-2.2.2=##;; p; }' -e '/^$/d'
++++ sed -n -e '\#^ruby-2.2.2=# { s#^ruby-2.2.2=##;; p; }' -e '/^$/d'
+++ expanded_alias_name=
+++ [[ -n '' ]]
+++ ((  rvm_expanding_aliases == 0  ))
+++ [[ -n ruby-2.2.2 ]]
+++ [[ ruby-2.2.2 != \s\y\s\t\e\m ]]
+++ [[ -f /home/ec2-user/.rvm/config/alias ]]
+++ [[ -s /home/ec2-user/.rvm/config/alias ]]
++++ __rvm_db_ /home/ec2-user/.rvm/config/alias ruby-2.2.2
++++ typeset __db __key __value
++++ __db=/home/ec2-user/.rvm/config/alias
++++ __key=ruby-2.2.2
++++ shift 2
++++ __value=
++++ case "${__value}" in
++++ __rvm_db_get /home/ec2-user/.rvm/config/alias ruby-2.2.2
++++ [[ -f /home/ec2-user/.rvm/config/alias ]]
++++ __rvm_sed -n -e '\#^ruby-2.2.2=# { s#^ruby-2.2.2=##;; p; }' -e '/^$/d'
++++ sed -n -e '\#^ruby-2.2.2=# { s#^ruby-2.2.2=##;; p; }' -e '/^$/d'
+++ expanded_alias_name=
+++ [[ -n '' ]]
+++ [[ ruby-2.2.2 == default ]]
+++ [[ ruby-2.2.2 == *\@* ]]
+++ [[ -n '' ]]
+++ __rvm_ruby_string_parse
+++ __rvm_ruby_string_parse_
+++ typeset ruby_string gemset_name expanded_alias_name repo_url branch_name ruby_name
+++ ruby_string=ruby-2.2.2
+++ gemset_name=
+++ repo_url=https://github.com/ruby/ruby.git
+++ branch_name=
+++ ruby_name=
+++ __rvm_unset_ruby_variables
+++ unset rvm_env_string rvm_ruby_string rvm_ruby_strings rvm_ruby_binary rvm_ruby_gem_home rvm_ruby_gem_path rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_log_path rvm_ruby_major_version rvm_ruby_minor_version rvm_ruby_package_name rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_repo_branch rvm_ruby_revision rvm_ruby_selected_flag rvm_ruby_tag rvm_ruby_version rvm_head_flag rvm_ruby_package_file rvm_ruby_configure rvm_ruby_name rvm_ruby_url rvm_ruby_global_gems_path rvm_ruby_args rvm_ruby_name rvm_llvm_flag
+++ __rvm_load_rvmrc
+++ typeset _file
+++ typeset -a rvm_rvmrc_files
+++ ((  0 == 1  ))
+++ [[ -n 0002 ]]
+++ rvm_rvmrc_files=("/etc/rvmrc" "$HOME/.rvmrc")
+++ [[ -n /home/ec2-user ]]
+++ [[ /home/ec2-user/.rvmrc -ef /home/ec2-user/.rvmrc ]]
+++ rvm_rvmrc_files+=("${rvm_prefix}/.rvmrc")
+++ for _file in '"${rvm_rvmrc_files[@]}"'
+++ [[ -s /etc/rvmrc ]]
+++ for _file in '"${rvm_rvmrc_files[@]}"'
+++ [[ -s /home/ec2-user/.rvmrc ]]
+++ for _file in '"${rvm_rvmrc_files[@]}"'
+++ [[ -s /home/ec2-user/.rvmrc ]]
+++ return 0
+++ rvm_ruby_repo_url=https://github.com/ruby/ruby.git
+++ rvm_ruby_repo_branch=
+++ rvm_ruby_name=
+++ export rvm_head_flag=0
+++ rvm_head_flag=0
+++ [[ -z ruby-2.2.2 ]]
+++ [[ ruby-2.2.2 == \c\u\r\r\e\n\t ]]
+++ strings=()
+++ __rvm_custom_separated_array strings - ruby-2.2.2
+++ typeset IFS
+++ IFS=-
+++ [[ -n '' ]]
+++ eval 'strings+=( $3 )'
++++ strings+=($3)
+++ rvm_ruby_string=ruby-2.2.2
+++ [[ -n '' ]]
+++ for string in '${strings[@]}'
+++ case "$string" in
+++ rvm_ruby_interpreter=ruby
+++ for string in '${strings[@]}'
+++ case "$string" in
+++ rvm_ruby_version=2.2.2
+++ rvm_ruby_revision=
+++ rvm_ruby_tag=
+++ [[ -z ruby ]]
+++ true
+++ ((  0 == 1  ))
+++ __rvm_ruby_string_parse_
+++ typeset ruby_string gemset_name expanded_alias_name repo_url branch_name ruby_name
+++ ruby_string=ruby-2.2.2
+++ gemset_name=
+++ repo_url=https://github.com/ruby/ruby.git
+++ branch_name=
+++ ruby_name=
+++ __rvm_unset_ruby_variables
+++ unset rvm_env_string rvm_ruby_string rvm_ruby_strings rvm_ruby_binary rvm_ruby_gem_home rvm_ruby_gem_path rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_log_path rvm_ruby_major_version rvm_ruby_minor_version rvm_ruby_package_name rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_repo_branch rvm_ruby_revision rvm_ruby_selected_flag rvm_ruby_tag rvm_ruby_version rvm_head_flag rvm_ruby_package_file rvm_ruby_configure rvm_ruby_name rvm_ruby_url rvm_ruby_global_gems_path rvm_ruby_args rvm_ruby_name rvm_llvm_flag
+++ __rvm_load_rvmrc
+++ typeset _file
+++ typeset -a rvm_rvmrc_files
+++ ((  0 == 1  ))
+++ [[ -n 0002 ]]
+++ rvm_rvmrc_files=("/etc/rvmrc" "$HOME/.rvmrc")
+++ [[ -n /home/ec2-user ]]
+++ [[ /home/ec2-user/.rvmrc -ef /home/ec2-user/.rvmrc ]]
+++ rvm_rvmrc_files+=("${rvm_prefix}/.rvmrc")
+++ for _file in '"${rvm_rvmrc_files[@]}"'
+++ [[ -s /etc/rvmrc ]]
+++ for _file in '"${rvm_rvmrc_files[@]}"'
+++ [[ -s /home/ec2-user/.rvmrc ]]
+++ for _file in '"${rvm_rvmrc_files[@]}"'
+++ [[ -s /home/ec2-user/.rvmrc ]]
+++ return 0
+++ rvm_ruby_repo_url=https://github.com/ruby/ruby.git
+++ rvm_ruby_repo_branch=
+++ rvm_ruby_name=
+++ export rvm_head_flag=0
+++ rvm_head_flag=0
+++ [[ -z ruby-2.2.2 ]]
+++ [[ ruby-2.2.2 == \c\u\r\r\e\n\t ]]
+++ strings=()
+++ __rvm_custom_separated_array strings - ruby-2.2.2
+++ typeset IFS
+++ IFS=-
+++ [[ -n '' ]]
+++ eval 'strings+=( $3 )'
++++ strings+=($3)
+++ rvm_ruby_string=ruby-2.2.2
+++ [[ -n '' ]]
+++ for string in '${strings[@]}'
+++ case "$string" in
+++ rvm_ruby_interpreter=ruby
+++ for string in '${strings[@]}'
+++ case "$string" in
+++ rvm_ruby_version=2.2.2
+++ rvm_ruby_revision=
+++ rvm_ruby_tag=
+++ [[ -z ruby ]]
+++ true
+++ [[ -z ruby ]]
+++ __rvm_ruby_string_find
+++ __rvm_ruby_string_installed
+++ typeset __ruby_inst_dir=/home/ec2-user/.rvm/rubies/ruby-2.2.2
+++ [[ -n '' ]]
+++ [[ -n ruby ]]
+++ [[ -n ruby-2.2.2 ]]
+++ [[ -d /home/ec2-user/.rvm/rubies/ruby-2.2.2 ]]
+++ [[ -z '' ]]
+++ true
+++ [[ -n '' ]]
+++ detected_rvm_ruby_name=
+++ rvm_ruby_name=
+++ true
+++ __rvm_select_after_parse
+++ __rvm_select_interpreter_variables
+++ rvm_archive_extension=tar.gz
+++ [[ -z ruby ]]
+++ rvm_ruby_interpreter=ruby
+++ is_a_function __rvm_select_interpreter_ruby
+++ typeset -f __rvm_select_interpreter_ruby
+++ __rvm_select_interpreter_ruby
+++ [[ '' == \p\0 ]]
+++ rvm_ruby_package_name=ruby-2.2.2
+++ rvm_ruby_package_file=ruby-2.2.2
+++ [[ -z 2.2.2 ]]
+++ rvm_ruby_repo_url=https://github.com/ruby/ruby.git
+++ ((  0 == 0  ))
+++ __rvm_version_compare 2.2.2 -lt 1.8.5
+++ typeset first
++++ command head -n1
++++ head -n1
++++ __rvm_version_sort
++++ command printf %b '2.2.2\n1.8.5\n'
++++ printf %b '2.2.2\n1.8.5\n'
++++ awk '-F\t' '{print $2}'
++++ LC_ALL=C
++++ sort -t. -k 1,1d -k 2,2n -k 3,3n -k 4,4n -k 5,5n -k 6,6n -k 7,7n -k 8,8n -k 9,9n
++++ command awk '-F[.-]' -v OFS=. '{       # split on "." and "-", merge back with "."
+    original=$0                            # save original to preserve it before the line is changed
+    for (n=1; n<10; n++) {                 # iterate through max 9 components of version
+      $n=tolower($n)                       # ignore case for sorting
+      if ($n=="")         $n="0"           # treat non existing parts as 0
+      if ($n ~ /^p[0-9]/) $n=substr($n, 2) # old ruby -p notation
+      if ($n ~ /^[a-z]/)  $n=" "$n         # names go before numbers thanks to space
+    }
+    print $0"\t"original                   # print the transformed version and original separated by \t so we can extract original after sorting
+  }'
++++ awk '-F[.-]' -v OFS=. '{       # split on "." and "-", merge back with "."
+    original=$0                            # save original to preserve it before the line is changed
+    for (n=1; n<10; n++) {                 # iterate through max 9 components of version
+      $n=tolower($n)                       # ignore case for sorting
+      if ($n=="")         $n="0"           # treat non existing parts as 0
+      if ($n ~ /^p[0-9]/) $n=substr($n, 2) # old ruby -p notation
+      if ($n ~ /^[a-z]/)  $n=" "$n         # names go before numbers thanks to space
+    }
+    print $0"\t"original                   # print the transformed version and original separated by \t so we can extract original after sorting
+  }'
+++ first=1.8.5
+++ case "$2" in
+++ [[ 1.8.5 == \h\e\a\d ]]
+++ [[ 1.8.5 == \2\.\2\.\2 ]]
+++ return 1
+++ rvm_archive_extension=tar.bz2
+++ true
+++ __rvm_select_version_variables
+++ case "$rvm_ruby_version" in
+++ rvm_ruby_release_version=2
+++ rvm_ruby_major_version=2.2
+++ rvm_ruby_major_version=2
+++ rvm_ruby_minor_version=2
+++ __rvm_select_default_variables
+++ [[ ruby != ext ]]
+++ rvm_ruby_package_name=ruby-2.2.2
+++ rvm_ruby_home=/home/ec2-user/.rvm/rubies/ruby-2.2.2
+++ rvm_ruby_binary=/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin/ruby
+++ rvm_ruby_irbrc=/home/ec2-user/.rvm/rubies/ruby-2.2.2/.irbrc
+++ [[ system == \r\u\b\y ]]
+++ __rvm_gemset_select
+++ __rvm_gemset_select_only
+++ rvm_ruby_gem_home=/home/ec2-user/.rvm/gems/ruby-2.2.2
+++ : rvm_ignore_gemsets_flag:0:
+++ ((  rvm_ignore_gemsets_flag  ))
+++ rvm_ruby_global_gems_path=/home/ec2-user/.rvm/gems/ruby-2.2.2@global
+++ __rvm_gemset_handle_default
+++ rvm_gemset_name=@@
+++ rvm_gemset_name=@@
+++ rvm_gemset_name=
+++ [[ -z '' ]]
+++ [[ '' == \g\l\o\b\a\l ]]
+++ rvm_ruby_gem_path=/home/ec2-user/.rvm/gems/ruby-2.2.2:/home/ec2-user/.rvm/gems/ruby-2.2.2@global
+++ [[ -n '' ]]
+++ rvm_env_string=ruby-2.2.2
+++ true
+++ __rvm_gemset_select_validation
+++ [[ ! -d /home/ec2-user/.rvm/gems/ruby-2.2.2 ]]
+++ ((  0 == 1  ))
+++ case "${rvm_gemset_name}" in
+++ typeset rvm_ruby_gem_home_254
+++ [[ -n '' ]]
+++ rvm_ruby_gem_home_254=/home/ec2-user/.rvm/gems/ruby-2.2.2
+++ [[ /home/ec2-user/.rvm/gems/ruby-2.2.2 != \/\h\o\m\e\/\e\c\2\-\u\s\e\r\/\.\r\v\m\/\g\e\m\s\/\r\u\b\y\-\2\.\2\.\2 ]]
+++ rvm_ruby_selected_flag=1
+++ [[ system == ruby ]]
+++ __rvm_use_
+++ rvm_ruby_home=/home/ec2-user/.rvm/rubies/ruby-2.2.2
+++ [[ ! -d /home/ec2-user/.rvm/rubies/ruby-2.2.2 ]]
+++ __rvm_gemset_use_ensure
+++ [[ ! -d /home/ec2-user/.rvm/gems/ruby-2.2.2 ]]
+++ [[ -n '' ]]
+++ export GEM_HOME GEM_PATH MY_RUBY_HOME RUBY_VERSION IRBRC
+++ GEM_HOME=/home/ec2-user/.rvm/gems/ruby-2.2.2
+++ GEM_PATH=/home/ec2-user/.rvm/gems/ruby-2.2.2:/home/ec2-user/.rvm/gems/ruby-2.2.2@global
+++ MY_RUBY_HOME=/home/ec2-user/.rvm/rubies/ruby-2.2.2
+++ RUBY_VERSION=ruby-2.2.2
+++ IRBRC=/home/ec2-user/.rvm/rubies/ruby-2.2.2/.irbrc
+++ unset BUNDLE_PATH
+++ [[ maglev == \r\u\b\y ]]
+++ [[ -n /home/ec2-user/.rvm/rubies/ruby-2.2.2/.irbrc ]]
+++ ((  0 >= 2 && 1 == 0  ))
+++ ((  0 == 1 && 1 == 1  ))
+++ [[ /home/ec2-user/.rvm/gems/ruby-2.2.2 != \/\h\o\m\e\/\e\c\2\-\u\s\e\r\/\.\r\v\m\/\g\e\m\s\/\r\u\b\y\-\2\.\2\.\2\@\g\l\o\b\a\l ]]
+++ __path_prefix=/home/ec2-user/.rvm/gems/ruby-2.2.2/bin:/home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin:/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin:/home/ec2-user/.rvm/bin
+++ __path_suffix=
+++ __rvm_use_common
+++ [[ -z ruby-2.2.2 ]]
+++ export rvm_ruby_string
+++ [[ -z '' ]]
+++ typeset __save_PATH
+++ __rvm_remove_rvm_from_path
+++ typeset local_rvm_path
+++ __rvm_remove_from_path '/home/ec2-user/.rvm/*'
+++ export PATH
+++ typeset _value
+++ _value='/home/ec2-user/.rvm/*'
+++ [[ /home/ec2-user/.rvm/gems/ruby-2.2.2/bin:/home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin:/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin:/home/ec2-user/.rvm/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin == *\/\/* ]]
+++ [[ /home/ec2-user/.rvm/gems/ruby-2.2.2/bin:/home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin:/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin:/home/ec2-user/.rvm/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin == *\/\:* ]]
+++ __rvm_string_match :/home/ec2-user/.rvm/gems/ruby-2.2.2/bin:/home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin:/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin:/home/ec2-user/.rvm/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin: '*:/home/ec2-user/.rvm/*:*'
+++ typeset _string
+++ _string=:/home/ec2-user/.rvm/gems/ruby-2.2.2/bin:/home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin:/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin:/home/ec2-user/.rvm/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ return 0
+++ typeset -a _path
+++ _path=()
+++ __rvm_custom_separated_array _path : /home/ec2-user/.rvm/gems/ruby-2.2.2/bin:/home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin:/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin:/home/ec2-user/.rvm/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+++ typeset IFS
+++ IFS=:
+++ [[ -n '' ]]
+++ eval '_path+=( $3 )'
++++ _path+=($3)
+++ __rvm_remove_from_array _path '/home/ec2-user/.rvm/*' /home/ec2-user/.rvm/gems/ruby-2.2.2/bin /home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin /home/ec2-user/.rvm/rubies/ruby-2.2.2/bin /home/ec2-user/.rvm/bin /usr/local/bin /bin /usr/bin /usr/local/sbin /usr/sbin /sbin /opt/aws/bin /home/ec2-user/.local/bin /home/ec2-user/bin
+++ typeset _array_name _iterator _search
+++ typeset -a _temp_array
+++ _array_name=_path
+++ _search='/home/ec2-user/.rvm/*'
+++ shift 2
+++ _temp_array=()
+++ for _iterator in '"$@"'
+++ __rvm_string_match /home/ec2-user/.rvm/gems/ruby-2.2.2/bin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/home/ec2-user/.rvm/gems/ruby-2.2.2/bin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ return 0
+++ for _iterator in '"$@"'
+++ __rvm_string_match /home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ return 0
+++ for _iterator in '"$@"'
+++ __rvm_string_match /home/ec2-user/.rvm/rubies/ruby-2.2.2/bin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ return 0
+++ for _iterator in '"$@"'
+++ __rvm_string_match /home/ec2-user/.rvm/bin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/home/ec2-user/.rvm/bin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ return 0
+++ for _iterator in '"$@"'
+++ __rvm_string_match /usr/local/bin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/usr/local/bin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ shift
+++ ((  0  ))
+++ return 1
+++ _temp_array+=("$_iterator")
+++ for _iterator in '"$@"'
+++ __rvm_string_match /bin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/bin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ shift
+++ ((  0  ))
+++ return 1
+++ _temp_array+=("$_iterator")
+++ for _iterator in '"$@"'
+++ __rvm_string_match /usr/bin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/usr/bin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ shift
+++ ((  0  ))
+++ return 1
+++ _temp_array+=("$_iterator")
+++ for _iterator in '"$@"'
+++ __rvm_string_match /usr/local/sbin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/usr/local/sbin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ shift
+++ ((  0  ))
+++ return 1
+++ _temp_array+=("$_iterator")
+++ for _iterator in '"$@"'
+++ __rvm_string_match /usr/sbin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/usr/sbin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ shift
+++ ((  0  ))
+++ return 1
+++ _temp_array+=("$_iterator")
+++ for _iterator in '"$@"'
+++ __rvm_string_match /sbin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/sbin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ shift
+++ ((  0  ))
+++ return 1
+++ _temp_array+=("$_iterator")
+++ for _iterator in '"$@"'
+++ __rvm_string_match /opt/aws/bin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/opt/aws/bin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ shift
+++ ((  0  ))
+++ return 1
+++ _temp_array+=("$_iterator")
+++ for _iterator in '"$@"'
+++ __rvm_string_match /home/ec2-user/.local/bin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/home/ec2-user/.local/bin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ shift
+++ ((  0  ))
+++ return 1
+++ _temp_array+=("$_iterator")
+++ for _iterator in '"$@"'
+++ __rvm_string_match /home/ec2-user/bin '/home/ec2-user/.rvm/*'
+++ typeset _string
+++ _string=/home/ec2-user/bin
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ shift
+++ ((  0  ))
+++ return 1
+++ _temp_array+=("$_iterator")
+++ eval '_path=( "${_temp_array[@]}" )'
++++ _path=("${_temp_array[@]}")
+++ __rvm_join_array PATH : _path
+++ typeset IFS
+++ IFS=:
+++ eval 'PATH="${_path[*]}"'
++++ PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+++ __rvm_remove_from_path /home/ec2-user/.rvm/bin
+++ export PATH
+++ typeset _value
+++ _value=/home/ec2-user/.rvm/bin
+++ [[ /usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin == *\/\/* ]]
+++ [[ /usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin == *\/\:* ]]
+++ __rvm_string_match :/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin: '*:/home/ec2-user/.rvm/bin:*'
+++ typeset _string
+++ _string=:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:
+++ shift
+++ ((  1  ))
+++ case "${_string}" in
+++ shift
+++ ((  0  ))
+++ return 1
++++ __rvm_which rvm
+++ local_rvm_path=
+++ builtin hash -r
+++ __save_PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+++ [[ -n '' ]]
+++ PATH=/home/ec2-user/.rvm/gems/ruby-2.2.2/bin:/home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin:/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin:/home/ec2-user/.rvm/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+++ export PATH
+++ builtin hash -r
+++ [[ ruby-2.2.2 != \s\y\s\t\e\m ]]
+++ case "${rvm_rvmrc_flag:-0}" in
+++ typeset environment_id
++++ __rvm_env_string
++++ typeset _string
++++ _string=/home/ec2-user/.rvm/gems/ruby-2.2.2
++++ _string=ruby-2.2.2
++++ printf %b 'ruby-2.2.2\n'
+++ environment_id=ruby-2.2.2
+++ ((  0 == 1  ))
+++ rvm_default_flag=0
+++ [[ -n '' ]]
+++ rvm_hook=after_use
+++ source /home/ec2-user/.rvm/scripts/hook
++++ typeset old_rvm_verbose_flag old_rvm_debug_flag
++++ old_rvm_verbose_flag=1
++++ old_rvm_debug_flag=0
++++ typeset rvm_verbose_flag rvm_debug_flag hooks
++++ true rvm_verbose_flag:1 rvm_debug_flag:0 rvm_hook:after_use
++++ [[ -n after_use ]]
++++ hooks=()
++++ [[ -d /home/ec2-user/.rvm/hooks ]]
++++ hooks+=("$rvm_hooks_path")
++++ [[ /home/ec2-user/bellari/db/migrate/.rvm/hooks != \/\h\o\m\e\/\e\c\2\-\u\s\e\r\/\.\r\v\m\/\h\o\o\k\s ]]
++++ [[ -d /home/ec2-user/bellari/db/migrate/.rvm/hooks ]]
++++ [[ -n /home/ec2-user/.rvm/hooks ]]
++++ __rvm_read_lines _hooks_list /dev/fd/63
++++ typeset IFS
++++ IFS='
+'
++++ [[ /dev/fd/63 == \- ]]
++++ eval '_hooks_list=( $( \command \cat "${2:--}" ) )'
+++++ _hooks_list=($( \command \cat "${2:--}" ))
++++++ command cat /dev/fd/63
++++++ cat /dev/fd/63
+++++ __rvm_find -L /home/ec2-user/.rvm/hooks -iname 'after_use*' -type f
++++ for hook in '"${_hooks_list[@]}"'
++++ [[ -x /home/ec2-user/.rvm/hooks/after_use_jruby ]]
++++ [[ after_use_jruby == \a\f\t\e\r\_\u\s\e ]]
++++ for hook in '"${_hooks_list[@]}"'
++++ [[ -x /home/ec2-user/.rvm/hooks/after_use_current ]]
++++ [[ after_use_current == \a\f\t\e\r\_\u\s\e ]]
++++ for hook in '"${_hooks_list[@]}"'
++++ [[ -x /home/ec2-user/.rvm/hooks/after_use_rbx_opts ]]
++++ [[ after_use_rbx_opts == \a\f\t\e\r\_\u\s\e ]]
++++ for hook in '"${_hooks_list[@]}"'
++++ [[ -x /home/ec2-user/.rvm/hooks/after_use_maglev ]]
++++ [[ /home/ec2-user/.rvm/hooks/after_use_maglev == \/\h\o\m\e\/\e\c\2\-\u\s\e\r\/\.\r\v\m\/\h\o\o\k\s\/* ]]
++++ rvm_debug 'Running /home/ec2-user/.rvm/hooks/after_use_maglev'
++++ ((  0  ))
++++ return 0
++++ __rvm_conditionally_do_with_env . /home/ec2-user/.rvm/hooks/after_use_maglev
++++ ((  __rvm_env_loaded > 0  ))
++++ . /home/ec2-user/.rvm/hooks/after_use_maglev
+++++ . /home/ec2-user/.rvm/scripts/functions/hooks/maglev
+++++ [[ ruby-2.2.2 =~ maglev ]]
++++ for hook in '"${_hooks_list[@]}"'
++++ [[ -x /home/ec2-user/.rvm/hooks/after_use_jruby_opts ]]
++++ [[ after_use_jruby_opts == \a\f\t\e\r\_\u\s\e ]]
++++ for hook in '"${_hooks_list[@]}"'
++++ [[ -x /home/ec2-user/.rvm/hooks/after_use_home_bin ]]
++++ [[ after_use_home_bin == \a\f\t\e\r\_\u\s\e ]]
++++ for hook in '"${_hooks_list[@]}"'
++++ [[ -x /home/ec2-user/.rvm/hooks/after_use_textmate ]]
++++ [[ after_use_textmate == \a\f\t\e\r\_\u\s\e ]]
++++ unset rvm_hook hooks _hooks_list hook
+++ return 0
+++ shift
+++ gemset_pristine
+++ unset -f gem
+++ builtin command -v gem
+++ typeset _gem _version _platforms
+++ typeset -a _failed _pristine_command
+++ _failed=()
+++ _pristine_command=(\command \gem pristine)
++++ command gem --version
++++ gem --version
+++ __rvm_version_compare 2.6.11 -ge 2.2.0
+++ typeset first
++++ command head -n1
++++ head -n1
++++ __rvm_version_sort
++++ command printf %b '2.6.11\n2.2.0\n'
++++ printf %b '2.6.11\n2.2.0\n'
++++ awk '-F\t' '{print $2}'
++++ LC_ALL=C
++++ sort -t. -k 1,1d -k 2,2n -k 3,3n -k 4,4n -k 5,5n -k 6,6n -k 7,7n -k 8,8n -k 9,9n
++++ command awk '-F[.-]' -v OFS=. '{       # split on "." and "-", merge back with "."
+    original=$0                            # save original to preserve it before the line is changed
+    for (n=1; n<10; n++) {                 # iterate through max 9 components of version
+      $n=tolower($n)                       # ignore case for sorting
+      if ($n=="")         $n="0"           # treat non existing parts as 0
+      if ($n ~ /^p[0-9]/) $n=substr($n, 2) # old ruby -p notation
+      if ($n ~ /^[a-z]/)  $n=" "$n         # names go before numbers thanks to space
+    }
+    print $0"\t"original                   # print the transformed version and original separated by \t so we can extract original after sorting
+  }'
++++ awk '-F[.-]' -v OFS=. '{       # split on "." and "-", merge back with "."
+    original=$0                            # save original to preserve it before the line is changed
+    for (n=1; n<10; n++) {                 # iterate through max 9 components of version
+      $n=tolower($n)                       # ignore case for sorting
+      if ($n=="")         $n="0"           # treat non existing parts as 0
+      if ($n ~ /^p[0-9]/) $n=substr($n, 2) # old ruby -p notation
+      if ($n ~ /^[a-z]/)  $n=" "$n         # names go before numbers thanks to space
+    }
+    print $0"\t"original                   # print the transformed version and original separated by \t so we can extract original after sorting
+  }'
+++ first=2.2.0
+++ case "$2" in
+++ [[ 2.2.0 == \h\e\a\d ]]
+++ [[ 2.2.0 == \2\.\2\.\0 ]]
+++ return 0
+++ _pristine_command+=(--extensions)
+++ rvm_log 'Restoring gems to pristine condition...'
+++ [[ '' == 1 ]]
+++ rvm_pretty_print stdout
+++ case "${rvm_pretty_print_flag:=auto}" in
+++ case "${TERM:-dumb}" in
+++ case "$1" in
+++ [[ -t 1 ]]
+++ return 1
+++ printf %b 'Restoring gems to pristine condition...\n'
+Restoring gems to pristine condition...
++++ GEM_PATH=/home/ec2-user/.rvm/gems/ruby-2.2.2
++++ __rvm_list_gems '! gem.extensions.empty?'
++++ typeset __checks __names
++++ __checks='! gem.extensions.empty?'
++++ shift
++++ __names=
++++ [[ -n '' ]]
++++ [[ -n ! gem.extensions.empty? ]]
++++ __checks='if ! gem.extensions.empty?'
++++ rvm_debug 'gem list check: if ! gem.extensions.empty?'
++++ ((  0  ))
++++ return 0
++++ ruby -rrubygems -e '
+    Gem::Specification.each{|gem|
+      puts "#{gem.name} #{gem.version}" if ! gem.extensions.empty?
+    }
+  '
+++ read _gem _version _platforms
+++ printf %b 'bcrypt-3.1.11 '
+bcrypt-3.1.11 ++ command gem pristine --extensions bcrypt --version 3.1.11
+++ gem pristine --extensions bcrypt --version 3.1.11
+++ read _gem _version _platforms
+++ printf %b 'bigdecimal-1.2.6 '
+bigdecimal-1.2.6 ++ command gem pristine --extensions bigdecimal --version 1.2.6
+++ gem pristine --extensions bigdecimal --version 1.2.6
+++ read _gem _version _platforms
+++ printf %b 'byebug-9.0.6 '
+byebug-9.0.6 ++ command gem pristine --extensions byebug --version 9.0.6
+++ gem pristine --extensions byebug --version 9.0.6
+++ read _gem _version _platforms
+++ printf %b 'debug_inspector-0.0.2 '
+debug_inspector-0.0.2 ++ command gem pristine --extensions debug_inspector --version 0.0.2
+++ gem pristine --extensions debug_inspector --version 0.0.2
+++ read _gem _version _platforms
+++ printf %b 'eventmachine-1.2.3 '
+eventmachine-1.2.3 ++ command gem pristine --extensions eventmachine --version 1.2.3
+++ gem pristine --extensions eventmachine --version 1.2.3
+++ read _gem _version _platforms
+++ printf %b 'ffi-1.9.18 '
+ffi-1.9.18 ++ command gem pristine --extensions ffi --version 1.9.18
+++ gem pristine --extensions ffi --version 1.9.18
+++ read _gem _version _platforms
+++ printf %b 'io-console-0.4.3 '
+io-console-0.4.3 ++ command gem pristine --extensions io-console --version 0.4.3
+++ gem pristine --extensions io-console --version 0.4.3
+++ read _gem _version _platforms
+++ printf %b 'nio4r-2.0.0 '
+nio4r-2.0.0 ++ command gem pristine --extensions nio4r --version 2.0.0
+++ gem pristine --extensions nio4r --version 2.0.0
+++ read _gem _version _platforms
+++ printf %b 'nokogiri-1.7.1 '
+nokogiri-1.7.1 ++ command gem pristine --extensions nokogiri --version 1.7.1
+++ gem pristine --extensions nokogiri --version 1.7.1
+++ read _gem _version _platforms
+++ printf %b 'psych-2.0.8 '
+psych-2.0.8 ++ command gem pristine --extensions psych --version 2.0.8
+++ gem pristine --extensions psych --version 2.0.8
+++ read _gem _version _platforms
+++ printf %b 'puma-3.8.2 '
+puma-3.8.2 ++ command gem pristine --extensions puma --version 3.8.2
+++ gem pristine --extensions puma --version 3.8.2
+++ read _gem _version _platforms
+++ printf %b 'sqlite3-1.3.13 '
+sqlite3-1.3.13 ++ command gem pristine --extensions sqlite3 --version 1.3.13
+++ gem pristine --extensions sqlite3 --version 1.3.13
+++ read _gem _version _platforms
+++ printf %b 'therubyracer-0.12.3 '
+therubyracer-0.12.3 ++ command gem pristine --extensions therubyracer --version 0.12.3
+++ gem pristine --extensions therubyracer --version 0.12.3
+++ read _gem _version _platforms
+++ printf %b 'thin-1.7.0 '
+thin-1.7.0 ++ command gem pristine --extensions thin --version 1.7.0
+++ gem pristine --extensions thin --version 1.7.0
+++ read _gem _version _platforms
+++ printf %b 'websocket-driver-0.6.5 '
+websocket-driver-0.6.5 ++ command gem pristine --extensions websocket-driver --version 0.6.5
+++ gem pristine --extensions websocket-driver --version 0.6.5
+++ read _gem _version _platforms
+++ ((  0 > 0  ))
+++ rvm_log '\nfinished.'
+++ [[ '' == 1 ]]
+++ rvm_pretty_print stdout
+++ case "${rvm_pretty_print_flag:=auto}" in
+++ case "${TERM:-dumb}" in
+++ case "$1" in
+++ [[ -t 1 ]]
+++ return 1
+++ printf %b '\nfinished.\n'
+
+finished.

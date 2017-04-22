@@ -1,0 +1,22 @@
+[2017-03-29 04:56:57] __rvm_rm_rf
+__rvm_rm_rf () 
+{ 
+    __rvm_rm_rf_verbose "$@"
+}
+current path: /home/ec2-user/bellari/db/migrate
+GEM_HOME=/home/ec2-user/.rvm/gems/ruby-2.2.2
+PATH=/home/ec2-user/.rvm/gems/ruby-2.2.2/bin:/home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin:/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin:/home/ec2-user/.rvm/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+GEM_PATH=/home/ec2-user/.rvm/gems/ruby-2.2.2:/home/ec2-user/.rvm/gems/ruby-2.2.2@global
+command(2): __rvm_rm_rf /home/ec2-user/.rvm/src/ruby-2.2.2
+++ __rvm_rm_rf_verbose /home/ec2-user/.rvm/src/ruby-2.2.2
+++ typeset target
+++ target=/home/ec2-user/.rvm/src/ruby-2.2.2
+++ [[ -n '' ]]
+++ [[ -n 4.2.46(1)-release ]]
+++ builtin shopt -s extglob
+++ case "${target}" in
+++ [[ -z /home/ec2-user/.rvm/src/ruby-2.2.2 ]]
+++ [[ -d /home/ec2-user/.rvm/src/ruby-2.2.2 ]]
+++ command rm -rf /home/ec2-user/.rvm/src/ruby-2.2.2
+++ rm -rf /home/ec2-user/.rvm/src/ruby-2.2.2
+++ true

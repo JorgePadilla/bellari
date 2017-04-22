@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"env:ETI"Thin::Request#env;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"+CGI-like request environment variables;T:
+@fileI"lib/thin/request.rb;T:0@omit_headings_from_table_of_contents_below0F@I"Thin::Request;TcRDoc::NormalClass0

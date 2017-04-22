@@ -1,0 +1,12 @@
+[2017-03-25 07:38:40] __rvm_patch
+__rvm_patch () 
+{ 
+    \patch "$@" || return $?
+}
+current path: /home/ec2-user/.rvm/src/ruby-2.2.2
+GEM_HOME=/home/ec2-user/.rvm/gems/ruby-2.1.10
+PATH=/home/ec2-user/.rvm/gems/ruby-2.1.10/bin:/home/ec2-user/.rvm/gems/ruby-2.1.10@global/bin:/home/ec2-user/.rvm/rubies/ruby-2.1.10/bin:/home/ec2-user/.rvm/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+GEM_PATH=/home/ec2-user/.rvm/gems/ruby-2.1.10:/home/ec2-user/.rvm/gems/ruby-2.1.10@global
+command(8): __rvm_patch -F 25 -p1 -N -f -i /home/ec2-user/.rvm/patches/ruby/2.2.2/fix_installing_bundled_gems.patch
+++ patch -F 25 -p1 -N -f -i /home/ec2-user/.rvm/patches/ruby/2.2.2/fix_installing_bundled_gems.patch
+patching file tool/rbinstall.rb

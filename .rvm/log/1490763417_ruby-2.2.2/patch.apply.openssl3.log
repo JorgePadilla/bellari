@@ -1,0 +1,17 @@
+[2017-03-29 04:57:04] __rvm_patch
+__rvm_patch () 
+{ 
+    \patch "$@" || return $?
+}
+current path: /home/ec2-user/.rvm/src/ruby-2.2.2
+GEM_HOME=/home/ec2-user/.rvm/gems/ruby-2.2.2
+PATH=/home/ec2-user/.rvm/gems/ruby-2.2.2/bin:/home/ec2-user/.rvm/gems/ruby-2.2.2@global/bin:/home/ec2-user/.rvm/rubies/ruby-2.2.2/bin:/home/ec2-user/.rvm/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+GEM_PATH=/home/ec2-user/.rvm/gems/ruby-2.2.2:/home/ec2-user/.rvm/gems/ruby-2.2.2@global
+command(8): __rvm_patch -F 25 -p1 -N -f -i /home/ec2-user/.rvm/patches/ruby/2.2.2/openssl3.patch
+++ patch -F 25 -p1 -N -f -i /home/ec2-user/.rvm/patches/ruby/2.2.2/openssl3.patch
+patching file ext/openssl/extconf.rb
+Hunk #1 succeeded at 103 (offset -1 lines).
+patching file ext/openssl/ossl_ssl.c
+Hunk #1 succeeded at 138 (offset 29 lines).
+patching file test/openssl/test_ssl.rb
+Hunk #1 succeeded at 676 (offset -236 lines).

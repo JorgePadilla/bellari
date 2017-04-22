@@ -1,0 +1,14 @@
+current directory: /home/ec2-user/.rvm/rubies/ruby-2.1.10/lib/ruby/gems/2.1.0/gems/gem-wrappers-1.2.7/ext/wrapper_generator
+/home/ec2-user/.rvm/rubies/ruby-2.1.10/bin/ruby -r ./siteconf20170325-15212-x0xels.rb extconf.rb
+
+current directory: /home/ec2-user/.rvm/rubies/ruby-2.1.10/lib/ruby/gems/2.1.0/gems/gem-wrappers-1.2.7/ext/wrapper_generator
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /home/ec2-user/.rvm/rubies/ruby-2.1.10/lib/ruby/gems/2.1.0/gems/gem-wrappers-1.2.7/ext/wrapper_generator
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /home/ec2-user/.rvm/rubies/ruby-2.1.10/lib/ruby/gems/2.1.0/gems/gem-wrappers-1.2.7/ext/wrapper_generator
+make "DESTDIR=" install
+make: Nothing to be done for `install'.

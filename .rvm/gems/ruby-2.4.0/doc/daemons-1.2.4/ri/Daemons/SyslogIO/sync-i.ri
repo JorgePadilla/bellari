@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"	sync:ETI"Daemons::SyslogIO#sync;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"1Indicates whether synchonous IO is enabled. ;TI"@return [Boolean];T:
+@fileI"lib/daemons/syslogio.rb;T:0@omit_headings_from_table_of_contents_below0F@I"Daemons::SyslogIO;TcRDoc::NormalClass0
